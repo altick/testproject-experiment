@@ -23,12 +23,14 @@ namespace TestWebApplicationStructure
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/bower_components/angular-loading-bar/build/loading-bar.css"
+                      "~/bower_components/angular-loading-bar/build/loading-bar.css",
+                      "~/bower_components/materialize/css/materialize.css"
                       ));
 
             bundles.Add(new ScriptBundle("~/bundles/vendor").Include(
                 //"~/bower_components/moment/moment.js",
                 "~/bower_components/jquery/dist/jquery.js",
+                "~/bower_components/materialize/js/materialize.js",
                 "~/bower_components/underscore/underscore.js",
                 "~/bower_components/angular/angular.js",
                 "~/bower_components/angular-resource/angular-resource.js",
@@ -38,7 +40,8 @@ namespace TestWebApplicationStructure
                 "~/bower_components/angular-underscore/angular-underscore.js",
                 "~/bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
                 "~/bower_components/angular-ui-router/release/angular-ui-router.js",
-                "~/bower_components/angular-loading-bar/build/loading-bar.js"
+                "~/bower_components/angular-loading-bar/build/loading-bar.js",
+                "~/bower_components/angular-materialize/src/angular-materialize.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/app")

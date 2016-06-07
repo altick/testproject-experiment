@@ -15,3 +15,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+#main-nav {
+    margin-top: -50px;
+}
