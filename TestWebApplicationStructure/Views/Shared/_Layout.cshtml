@@ -8,7 +8,18 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @*<header class="navbar navbar-inverse navbar-fixed-top">
+    <nav>
+        <div id="main-nav" class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+@*<header class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,16 +37,16 @@
             </div>
         </div>
     </header>*@
-    @*<div class="container body-content">*@
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    @*</div>*@
+@*<div class="container body-content">*@
+@RenderBody()
+<hr/>
+<footer>
+    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+</footer>
+@*</div>*@
 
-    @Scripts.Render("~/bundles/vendor")
-    @Scripts.Render("~/bundles/app")
-    @RenderSection("scripts", required: false)
+@Scripts.Render("~/bundles/vendor")
+@Scripts.Render("~/bundles/app")
+@RenderSection("scripts", required: false)
 </body>
 </html>

@@ -10,10 +10,11 @@
             'angular-underscore',
             //'templates',
             'ui.router', 
-            'ui.bootstrap',
+            //'ui.bootstrap',
             'angular-loading-bar',
             //'angularMoment',
-            'ngResource'
+            'ngResource',
+            'ui.materialize'
         ]).run(['$log', '$rootScope', runApp]);
 
     function runApp($log, $rootScope) {
